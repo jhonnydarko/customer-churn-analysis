@@ -102,3 +102,98 @@ O notebook contém um dashboard visual que combina:
     3. Linha temporal: churn vs tempo de permanência
 
 O dashboard permite rapidamente identificar os clientes de maior risco e fatores que influenciam o churn.
+
+
+## Documento de Requisitos – Análise de Churn IBM
+
+**Projeto:** Análise de Churn de Clientes
+
+**Objetivo do Projeto:**
+A IBM solicita uma análise detalhada da base de dados de clientes com o objetivo de entender os fatores que levam ao churn (cancelamento de serviço) e propor ações para mitigar a perda de clientes.
+
+---
+
+### 1. Escopo
+
+* Analisar o histórico de clientes, identificando padrões e variáveis que influenciam o churn.
+* Identificar segmentos de clientes mais propensos ao churn.
+* Desenvolver insights acionáveis para reduzir a taxa de churn.
+* Gerar relatórios, dashboards e visualizações que comuniquem os resultados de forma clara.
+
+### 2. Base de Dados
+
+* **Fonte:** IBM Telco Customer Churn Dataset.
+* **Formato:** CSV.
+* **Colunas principais:**
+
+  * `customerID`: Identificador do cliente
+  * `gender`: Gênero do cliente
+  * `SeniorCitizen`: Indica se é idoso
+  * `Partner`: Cliente possui parceiro
+  * `Dependents`: Cliente possui dependentes
+  * `tenure`: Tempo de contrato
+  * `PhoneService`, `MultipleLines`: Serviços de telefonia
+  * `InternetService`, `OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`: Serviços de internet e adicionais
+  * `Contract`, `PaperlessBilling`, `PaymentMethod`: Contrato e método de pagamento
+  * `MonthlyCharges`, `TotalCharges`: Valores cobrados
+  * `Churn`: Indica se o cliente cancelou o serviço (Sim/Não)
+
+### 3. Requisitos Funcionais
+
+1. **Análise exploratória de dados (EDA):**
+
+   * Estatísticas descritivas.
+   * Distribuição de variáveis categóricas e contínuas.
+   * Identificação de valores ausentes e inconsistentes.
+
+2. **Visualização de dados:**
+
+   * Gráficos que mostrem churn por idade, gênero, tipo de contrato, serviços contratados, etc.
+   * Análise de correlação entre variáveis e churn.
+
+3. **Modelagem preditiva:**
+
+   * Desenvolvimento de modelo de machine learning para prever churn.
+   * Avaliação de métricas de performance (accuracy, precision, recall, F1-score, AUC-ROC).
+   * Identificação das variáveis mais importantes para churn.
+
+4. **Segmentação de clientes:**
+
+   * Agrupamento de clientes em clusters com base em risco de churn.
+   * Identificação de características comuns em clientes propensos a churn.
+
+5. **Recomendações e ações:**
+
+   * Sugestões de estratégias para retenção de clientes.
+   * Identificação de produtos ou serviços com maior impacto na fidelização.
+
+### 4. Requisitos Não Funcionais
+
+* **Documentação completa:** Todos os passos da análise devem ser documentados.
+* **Reprodutibilidade:** Análise deve ser reprodutível (notebook, scripts ou dashboard interativo).
+* **Segurança e privacidade:** Dados sensíveis devem ser tratados com confidencialidade.
+* **Performance:** Análises devem ser executadas de forma eficiente, mesmo em grandes volumes de dados.
+
+### 5. Entregáveis
+
+* Relatório técnico completo da análise.
+* Dashboards interativos (Power BI, Tableau ou similar).
+* Notebook Python ou R com scripts de EDA, visualização e modelagem.
+* Documento de recomendações estratégicas para mitigação do churn.
+
+### 6. Cronograma sugerido
+
+| Etapa | Atividade                         | Prazo  |
+| ----- | --------------------------------- | ------ |
+| 1     | Coleta e limpeza de dados         | 2 dias |
+| 2     | EDA e visualizações iniciais      | 3 dias |
+| 3     | Modelagem preditiva               | 4 dias |
+| 4     | Segmentação e análise de clusters | 2 dias |
+| 5     | Relatório final e recomendações   | 2 dias |
+
+---
+
+**Observações:**
+
+* O foco da análise é fornecer insights acionáveis para reduzir a taxa de churn.
+* Recomenda-se priorizar variáveis com maior impacto no churn ao propor ações de retenção.
