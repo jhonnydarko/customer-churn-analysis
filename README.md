@@ -1,4 +1,4 @@
-# Customer Churn Analysis
+# IBM Customer Churn Analysis
 
 ## Objetivo
 
@@ -22,17 +22,17 @@ O notebook inclui:
 
 ## Estrutura do projeto
 
-customer-churn-analysis/
-│
-├── data/
-│ └── Telco_customer_churn.xlsx
-├── notebooks/
-│ └── churn_analysis.ipynb
-├── src/ # funções Python opcionais
-│ └── utils.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+    customer-churn-analysis/
+    │
+    ├── data/
+    │ └── Telco_customer_churn.xlsx
+    ├── notebooks/
+    │ └── churn_analysis.ipynb
+    ├── src/ # funções Python opcionais
+    │ └── utils.py
+    ├── requirements.txt
+    ├── README.md
+    └── .gitignore
 
 ## Como executar
 
