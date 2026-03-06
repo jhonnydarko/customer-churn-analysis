@@ -1,5 +1,9 @@
 # IBM Customer Churn Analysis
 
+### Dashboard Overview
+
+![Dashboard Overview](images/dashboard_overview.png)
+
 ## Objetivo
 
 Analisar o churn (cancelamento) de clientes da Telco para identificar padrões de risco, fatores de retenção e insights estratégicos para tomada de decisão.
